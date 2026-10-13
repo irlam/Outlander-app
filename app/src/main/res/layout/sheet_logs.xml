@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_screen"
+    android:padding="20dp">
+
+    <!-- Top header with actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Protocol Diagnostic Logs"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCopyLogs"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            app:icon="@drawable/ic_copy"
+            app:iconTint="@color/text_primary"
+            android:contentDescription="Copy" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShareLogs"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            app:icon="@drawable/ic_share"
+            app:iconTint="@color/text_primary"
+            android:contentDescription="Share" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClearLogs"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            app:icon="@drawable/ic_clear"
+            app:iconTint="@color/text_primary"
+            android:contentDescription="Clear" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCloseLogs"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            app:icon="@drawable/ic_close"
+            app:iconTint="@color/text_primary"
+            android:contentDescription="Close" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/logScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/card_surface"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvLogContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textSize="12sp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/text_primary"
+            android:textIsSelectable="true" />
+    </ScrollView>
+</LinearLayout>

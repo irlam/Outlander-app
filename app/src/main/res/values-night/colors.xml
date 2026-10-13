@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#38BDF8</color>
+    <color name="on_primary">#082F49</color>
+    <color name="primary_container">#0C4A6E</color>
+    <color name="on_primary_container">#BAE6FD</color>
+
+    <color name="ev_emerald">#34D399</color>
+    <color name="ev_emerald_bg">#064E3B</color>
+    <color name="ev_cyan">#22D3EE</color>
+    <color name="ev_cyan_bg">#164E63</color>
+    <color name="ev_amber">#FBBF24</color>
+    <color name="ev_amber_bg">#78350F</color>
+    <color name="ev_rose">#F87171</color>
+    <color name="ev_rose_bg">#7F1D1D</color>
+
+    <color name="bg_screen">#0B0F19</color>
+    <color name="card_surface">#151C2C</color>
+    <color name="card_stroke">#253248</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_tertiary">#64748B</color>
+</resources>
